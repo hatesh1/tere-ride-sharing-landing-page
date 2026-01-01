@@ -144,9 +144,10 @@ input {
     border-radius: 0 8px 8px 0;
     font-weight: 700;
     cursor: pointer;
+    white-space: nowrap;
+    /* Button ka text wrap nahi hoga */
 }
 
-/* How it Works */
 .second-section {
     text-align: center;
     padding-top: 50px;
@@ -373,6 +374,7 @@ input {
         flex-direction: column;
         text-align: center;
         margin: 10px;
+        padding: 10px;
     }
 
     .input-group {
@@ -402,6 +404,30 @@ input {
         display: flex;
     }
 
+    .logo img {
+        width: 110px;
+        height: auto;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-text p {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    input {
+        height: 50px;
+        padding: 0 15px;
+        font-size: 14px;
+    }
+
+    .apply-btn {
+        height: 50px;
+    }
+
     .info-card,
     .info-card.row-reverse {
         flex-direction: column;
@@ -409,7 +435,6 @@ input {
         gap: 20px;
     }
 
-    /* Footer Mobile */
     .footer-container {
         flex-direction: column;
         text-align: center;
@@ -438,4 +463,109 @@ input {
         order: 3;
         display: block;
     }
+}
+
+/* --- Mobile Responsive Styles (480px se niche) --- */
+@media (max-width: 480px) {
+    .input-group {
+        flex-direction: column;
+        gap: 12px;
+        max-width: 100%;
+    }
+
+    input {
+        width: 100%;
+        height: 50px;
+        border-radius: 8px;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .apply-btn {
+        width: 100%;
+        height: 50px;
+        border-radius: 8px;
+        padding: 0;
+    }
+
+    .second-section h1 {
+        font-size: 1.5rem;
+        padding: 0 0 20px;
+    }
+
+    .sub-text {
+        font-size: 0.89rem;
+        padding: 5px;
+    }
+
+    .big-green-circle {
+        width: 240px;
+        height: 240px;
+    }
+
+    .mobile-on-circle {
+        display: block;
+        width: 150px;
+    }
+
+    .step-p {
+        padding-top: 10px;
+    }
+
+    .benefits-title {
+        margin-top: 50px;
+        font-size: 1.5rem;
+    }
+
+    .info-card {
+        padding: 5px;
+    }
+
+    .bg-number {
+        font-size: 60px;
+    }
+
+    .info-card-heading {
+        font-size: 1.2rem;
+    }
+
+    .steps-container {
+        gap: 30px;
+    }
+
+    .benefits-wrapper {
+        margin: 5px auto;
+    }
+
+    .info-card {
+        margin-bottom: 25px;
+    }
+
+    .main-footer {
+        padding: 40px 5% 30px;
+    }
+
+    .footer-logo {
+        width: 110px;
+    }
+
+    .store-link {
+        width: 150px;
+    }
+
+    .footer-col.download-links {
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        margin-top: 10px;
+    }
+
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
